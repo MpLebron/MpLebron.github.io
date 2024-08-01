@@ -3,7 +3,7 @@
 title: 马培龙
 
 # Name pronunciation (optional)
-name_pronunciation: Ma Pei Long
+name_pronunciation: Ma pei long
 
 # Full name (for SEO)
 first_name: Peilong
