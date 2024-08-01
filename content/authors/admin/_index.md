@@ -3,7 +3,7 @@
 title: 马培龙
 
 # Name pronunciation (optional)
-name_pronunciation: Chien Shiung Wu
+name_pronunciation: Ma Pei Long
 
 # Full name (for SEO)
 first_name: Peilong
