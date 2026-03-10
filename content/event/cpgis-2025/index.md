@@ -1,7 +1,7 @@
 ---
 title: "PyGeoModel: A Python Package for Integrating Intelligent Geographic Model Services into Jupyter's Interactive Computing Environment"
 event: The 32nd International Conference on Geoinformatics and CPGIS Annual Conference
-event_url: ""
+event_url: "https://x.com/cpgis_media/status/1935439054767604062?s=20"
 location: Jiaozuo, Henan, China
 address:
   city: Jiaozuo
@@ -29,4 +29,4 @@ projects:
   - pygeomodel
 ---
 
-Presented at the 2025 conference in Jiaozuo and received the Best Paper award.
+Presented at the 2025 conference in Jiaozuo and received the [Best Paper award](https://x.com/cpgis_media/status/1935439054767604062?s=20).

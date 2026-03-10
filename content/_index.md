@@ -58,7 +58,7 @@ sections:
               </div>
               <div class="pm-news-item">
                 <div class="pm-news-date">Jun 2025</div>
-                <div class="pm-news-copy">Received the Best Paper award at the 32nd International Conference on Geoinformatics and CPGIS Annual Conference for the <a href="/event/cpgis-2025/">PyGeoModel</a> presentation.</div>
+                <div class="pm-news-copy">Received the <a href="https://x.com/cpgis_media/status/1935439054767604062?s=20" target="_blank" rel="noopener">Best Paper award</a> at the 32nd International Conference on Geoinformatics and CPGIS Annual Conference for the <a href="/event/cpgis-2025/">PyGeoModel</a> presentation.</div>
               </div>
             </div>
           </div>

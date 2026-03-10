@@ -42,7 +42,8 @@
         {{ range slice "png" "jpg" "jpeg" "webp" }}
           {{ if eq $thumbRel "" }}
             {{ with resources.Get (printf "media/pics/projects/%s.%s" $project.slug .) }}
-              {{ $thumbRel = .RelPermalink }}
+              {{ $thumb := .Fill "1200x675 Smart q95" }}
+              {{ $thumbRel = $thumb.RelPermalink }}
             {{ end }}
           {{ end }}
         {{ end }}

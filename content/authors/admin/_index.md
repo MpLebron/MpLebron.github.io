@@ -115,7 +115,7 @@ awards:
     awarder: 32nd International Conference on Geoinformatics and CPGIS Annual Conference
     icon: award
     summary: |
-      Awarded for the presentation "PyGeoModel: A Python Package for Integrating Intelligent Geographic Model Services into Jupyter's Interactive Computing Environment."
+      Awarded for the presentation "PyGeoModel: A Python Package for Integrating Intelligent Geographic Model Services into Jupyter's Interactive Computing Environment." [Announcement](https://x.com/cpgis_media/status/1935439054767604062?s=20)
   - title: Doctoral Academic Rising Star Program
     date: "2024-01-01"
     awarder: Nanjing Normal University
