@@ -136,6 +136,6 @@ awards:
 
 Peilong Ma is a PhD candidate in Cartography and Geographic Information Systems at Nanjing Normal University, advised by Prof. Min Chen. His research centers on intelligent geographic modeling, geospatial information services, and open science infrastructures for AI for Science.
 
-He contributes to OpenGMP and develops research software such as PyGeoModel to support model discovery, sensitivity analysis, and reproducible workflows. His work has been published in venues including *Journal of Hydrology*, *Transactions in GIS*, and *Remote Sensing*.
+He studies how domain knowledge, model resources, and computational services can be organized into reusable workflows for geographic analysis, simulation, and decision support. He contributes to OpenGMP and develops research software such as PyGeoModel and OpenGeoLab to support model discovery, sensitivity analysis, and reproducible workflows.
 
-He has authored 10 journal papers, received nearly 200 citations, and holds five Chinese invention patents together with two software copyrights.
+His recent work includes knowledge-driven hydrological sensitivity analysis, open knowledge frameworks for geoscientific models, and interactive tools for geographic modeling. He has authored 10 journal papers, received nearly 200 citations, and holds five Chinese invention patents together with two software copyrights.

@@ -10,6 +10,42 @@
   --pm-shadow: 0 18px 40px rgba(8, 47, 67, 0.08);
 }
 
+#section-resume-biography-3 .portrait-title,
+#section-resume-biography-3 .portrait-title *,
+#section-resume-biography-3 .bio-text,
+#section-resume-biography-3 .bio-text *,
+#section-resume-biography-3 .section-subheading,
+#section-resume-biography-3 .description,
+#section-resume-biography-3 .description *,
+#section-resume-biography-3 .course,
+#section-resume-biography-3 .network-icon,
+#section-resume-biography-3 .network-icon a,
+#section-resume-biography-3 ul,
+#section-resume-biography-3 li {
+  color: #fff !important;
+}
+
+#section-resume-biography-3 .hero-cv-button {
+  background: rgba(255, 255, 255, 0.08) !important;
+  border-color: rgba(255, 255, 255, 0.38) !important;
+  color: #fff !important;
+  box-shadow: none;
+}
+
+#section-resume-biography-3 .hero-cv-button:hover {
+  background: rgba(255, 255, 255, 0.16) !important;
+  color: #fff !important;
+}
+
+#section-resume-biography-3 .hero-cv-button svg,
+#section-resume-biography-3 .network-icon svg {
+  color: #fff !important;
+}
+
+#section-resume-biography-3 .avatar-hires {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
 .hbb-section[id="talks"],
 .hbb-section[id="overview"],
 .hbb-section[id="papers"],
@@ -80,6 +116,24 @@
 .pm-board-overview {
   background: linear-gradient(180deg, #dce9f5, #d4e3f2);
   border: 1px solid #c3d5e7;
+}
+
+.hbb-section[id="papers"] .pm-board,
+.hbb-section[id="projects"] .pm-board {
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  padding: 0;
+}
+
+.hbb-section[id="papers"] .pm-publication-card {
+  background: var(--pm-sand);
+  border: 1px solid var(--pm-sand-border);
+}
+
+.hbb-section[id="projects"] .pm-project-card {
+  background: var(--pm-sky);
+  border: 1px solid var(--pm-sky-border);
 }
 
 .pm-overview-grid {
