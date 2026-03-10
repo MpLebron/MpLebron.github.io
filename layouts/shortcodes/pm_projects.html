@@ -3,6 +3,7 @@
     "slug" "pygeomodel"
     "title" "PyGeoModel"
     "url" "https://github.com/MpLebron/PyGeoModel"
+    "thumb_spec" "1200x420 Bottom q95"
     "summary" "An intelligent Python package for urban and geographic modeling within Jupyter environments, integrating model recommendation, interactive configuration, question answering, and service-based execution."
     "links" (slice
       (dict "label" "Code" "url" "https://github.com/MpLebron/PyGeoModel")
@@ -14,6 +15,7 @@
     "slug" "geo-data-processor-mcp"
     "title" "GeoDataProcessor-MCP"
     "url" "https://github.com/MpLebron/GeoDataProcessor-MCP"
+    "thumb_spec" "1200x420 Center q95"
     "summary" "An MCP server for geospatial data processing tools, exposing WhiteBox and SAGA GIS style capabilities through a standardized interface for language-model-based agents and desktop assistants."
     "links" (slice
       (dict "label" "Code" "url" "https://github.com/MpLebron/GeoDataProcessor-MCP")
@@ -24,6 +26,7 @@
     "slug" "rs-segmentation"
     "title" "RS_Segmentation"
     "url" "https://github.com/MpLebron/RS_Segmentation"
+    "thumb_spec" "1200x420 Center q95"
     "summary" "An intelligent segmentation system for remote sensing and GIS imagery, supporting text-prompt segmentation, point-based refinement, GeoTIFF overlay browsing, Shapefile export, and optional voice interaction."
     "links" (slice
       (dict "label" "Code" "url" "https://github.com/MpLebron/RS_Segmentation")
@@ -42,7 +45,7 @@
         {{ range slice "png" "jpg" "jpeg" "webp" }}
           {{ if eq $thumbRel "" }}
             {{ with resources.Get (printf "media/pics/projects/%s.%s" $project.slug .) }}
-              {{ $thumb := .Fill "1200x675 Smart q95" }}
+              {{ $thumb := .Fill ($project.thumb_spec | default "1200x420 Smart q95") }}
               {{ $thumbRel = $thumb.RelPermalink }}
             {{ end }}
           {{ end }}
