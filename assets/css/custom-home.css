@@ -47,20 +47,39 @@
 }
 
 #section-resume-biography-3 .hero-layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   max-width: 1100px;
   margin: 0 auto;
+  min-height: calc(100vh - 13rem);
 }
 
 #section-resume-biography-3 .hero-top-row {
   display: grid;
-  grid-template-columns: minmax(16.5rem, 18.5rem) minmax(0, 1fr);
+  grid-template-columns: minmax(21rem, 23rem) minmax(0, 1fr);
   gap: 3rem;
-  align-items: start;
+  align-items: center;
 }
 
 #section-resume-biography-3 .hero-left-column {
+  display: flex;
+  justify-content: center;
   width: 100%;
   padding-top: 0.4rem;
+}
+
+#section-resume-biography-3 #profile {
+  width: 100%;
+}
+
+#section-resume-biography-3 .portrait-title {
+  width: min(23rem, 100%);
+  text-align: center;
+}
+
+#section-resume-biography-3 .portrait-title h3 {
+  width: 100%;
 }
 
 #section-resume-biography-3 .hero-right-column {
@@ -72,50 +91,48 @@
   gap: 0.95rem;
 }
 
-#section-resume-biography-3 .hero-bottom-meta {
+#section-resume-biography-3 .hero-side-meta {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1.6rem;
+  gap: 1.45rem;
   width: 100%;
-  max-width: 42rem;
-  margin-top: 0.2rem;
-  padding-top: 1.2rem;
+  max-width: 23rem;
+  padding-top: 1.25rem;
   border-top: 1px solid rgba(255, 255, 255, 0.16);
 }
 
-#section-resume-biography-3 .hero-meta-card {
-  min-width: 0;
-  padding: 0;
+#section-resume-biography-3 .hero-side-block {
+  width: 100%;
+  text-align: left;
 }
 
-#section-resume-biography-3 .hero-meta-card .section-subheading {
+#section-resume-biography-3 .hero-side-block .section-subheading {
   margin-bottom: 0.7rem;
   font-size: 1.1rem;
   line-height: 1.15;
 }
 
-#section-resume-biography-3 .hero-meta-card ul {
+#section-resume-biography-3 .hero-side-block ul {
   margin: 0;
 }
 
-#section-resume-biography-3 .hero-meta-card li {
+#section-resume-biography-3 .hero-side-block li {
   margin-bottom: 0.45rem;
 }
 
-#section-resume-biography-3 .hero-meta-card li:last-child {
+#section-resume-biography-3 .hero-side-block li:last-child {
   margin-bottom: 0;
 }
 
-#section-resume-biography-3 .hero-meta-card .description p {
+#section-resume-biography-3 .hero-side-block .description p {
   margin: 0;
 }
 
-#section-resume-biography-3 .hero-meta-card .description .course {
+#section-resume-biography-3 .hero-side-block .description .course {
   font-weight: 700;
   line-height: 1.45;
 }
 
-#section-resume-biography-3 .hero-meta-card .description .text-sm {
+#section-resume-biography-3 .hero-side-block .description .text-sm {
   margin-top: 0.1rem;
   line-height: 1.45;
   opacity: 0.92;
@@ -540,11 +557,15 @@
 }
 
 @media (max-width: 768px) {
-  #section-resume-biography-3 .hero-top-row,
-  #section-resume-biography-3 .hero-bottom-meta {
+  #section-resume-biography-3 .hero-layout {
+    min-height: auto;
+  }
+
+  #section-resume-biography-3 .hero-top-row {
     grid-template-columns: 1fr;
   }
 
+  #section-resume-biography-3 .hero-side-meta,
   #section-resume-biography-3 .hero-right-column {
     max-width: none;
   }
