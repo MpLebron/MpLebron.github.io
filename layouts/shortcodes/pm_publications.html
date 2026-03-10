@@ -16,20 +16,30 @@
         {{ end }}
 
         {{ $authors := $pub.Params.authors | default (slice) }}
+        {{ $authorNotes := $pub.Params.author_notes | default (slice) }}
         {{ $authorNames := slice }}
         {{ $adminIndex := -1 }}
+        {{ $hasCoFirst := false }}
         {{ range $i, $author := $authors }}
           {{ $name := printf "%v" $author }}
           {{ if eq $name "admin" }}
             {{ $name = "<strong>Peilong Ma</strong>" }}
             {{ $adminIndex = $i }}
           {{ end }}
+          {{ $note := "" }}
+          {{ if gt (len $authorNotes) $i }}
+            {{ $note = index $authorNotes $i }}
+          {{ end }}
+          {{ if eq $note "Co-first author" }}
+            {{ $name = printf "%s<sup class=\"pm-author-marker\">&dagger;</sup>" $name }}
+            {{ $hasCoFirst = true }}
+          {{ end }}
           {{ $authorNames = $authorNames | append $name }}
         {{ end }}
 
         {{ $role := "Co-author" }}
         {{ if ge $adminIndex 0 }}
-          {{ with $pub.Params.author_notes }}
+          {{ with $authorNotes }}
             {{ if gt (len .) $adminIndex }}
               {{ $note := index . $adminIndex }}
               {{ if $note }}
@@ -82,6 +92,9 @@
 
             <h3><a href="{{ $pub.RelPermalink }}">{{ $pub.Title }}</a></h3>
             <p class="pm-publication-authors">{{ delimit $authorNames ", " | safeHTML }}</p>
+            {{ if $hasCoFirst }}
+              <p class="pm-publication-author-note"><span class="pm-author-marker">&dagger;</span> Co-first authors</p>
+            {{ end }}
             {{ with $publicationLine }}
               <p class="pm-publication-venue-line">{{ . }}</p>
             {{ end }}
