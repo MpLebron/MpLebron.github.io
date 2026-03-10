@@ -82,6 +82,11 @@
   width: 100%;
 }
 
+#section-resume-biography-3 .bio-text h2 {
+  font-size: clamp(2.2rem, 2.6vw, 2.7rem);
+  line-height: 1.05;
+}
+
 #section-resume-biography-3 .hero-right-column {
   display: flex;
   max-width: 44rem;
@@ -97,7 +102,6 @@
   width: 100%;
   max-width: 23rem;
   padding-top: 1.25rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.16);
 }
 
 #section-resume-biography-3 .hero-side-block {

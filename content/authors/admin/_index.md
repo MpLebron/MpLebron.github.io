@@ -8,7 +8,7 @@ status:
 
 superuser: true
 highlight_name: true
-role: PhD Candidate in Cartography and GIS
+role: PhD Candidate in GIS
 
 organizations:
   - name: OpenGMS Lab, Nanjing Normal University
@@ -34,7 +34,7 @@ interests:
   - Open Science Infrastructure
 
 education:
-  - area: PhD Candidate in Cartography and Geographic Information Systems
+  - area: PhD Candidate in GIS
     institution: Nanjing Normal University
     date_start: 2022-09-01
     date_end: ""
