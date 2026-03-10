@@ -11,11 +11,13 @@
 }
 
 .hbb-section[id="talks"],
+.hbb-section[id="overview"],
 .hbb-section[id="papers"],
 .hbb-section[id="projects"] {
   scroll-margin-top: 6rem;
 }
 
+.hbb-section[id="overview"] > div,
 .hbb-section[id="talks"] > div,
 .hbb-section[id="papers"] > div,
 .hbb-section[id="projects"] > div {
@@ -23,6 +25,7 @@
   max-width: none;
 }
 
+.hbb-section[id="overview"] > div > .prose,
 .hbb-section[id="talks"] > div > .prose,
 .hbb-section[id="papers"] > div > .prose,
 .hbb-section[id="projects"] > div > .prose {
@@ -72,6 +75,123 @@
 .pm-board-sky {
   background: var(--pm-sky);
   border: 1px solid var(--pm-sky-border);
+}
+
+.pm-board-overview {
+  background: linear-gradient(180deg, #dce9f5, #d4e3f2);
+  border: 1px solid #c3d5e7;
+}
+
+.pm-overview-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(22rem, 0.9fr);
+  gap: 1.6rem;
+  align-items: start;
+}
+
+.pm-overview-copy {
+  min-width: 0;
+}
+
+.pm-overview-kicker {
+  margin: 0 0 1rem;
+  color: var(--pm-ink);
+  font-size: clamp(1.55rem, 2vw, 2.2rem);
+  font-weight: 900;
+  line-height: 1.16;
+  letter-spacing: -0.03em;
+}
+
+.pm-overview-copy p {
+  margin: 0.95rem 0 0;
+  color: var(--pm-muted);
+  font-size: 1.08rem;
+  line-height: 1.8;
+}
+
+.pm-overview-side {
+  display: grid;
+  gap: 1rem;
+}
+
+.pm-overview-panel,
+.pm-overview-metrics {
+  border-radius: 1.3rem;
+  background: rgba(255, 255, 255, 0.55);
+  border: 1px solid rgba(8, 47, 67, 0.08);
+}
+
+.pm-overview-panel {
+  padding: 1.15rem 1.2rem 1.05rem;
+}
+
+.pm-overview-panel h3 {
+  margin: 0 0 0.9rem;
+  color: var(--pm-ink);
+  font-size: 1.25rem;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+}
+
+.pm-overview-theme-list {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.pm-overview-theme {
+  padding-top: 0.9rem;
+  border-top: 1px solid rgba(8, 47, 67, 0.09);
+}
+
+.pm-overview-theme:first-child {
+  padding-top: 0;
+  border-top: 0;
+}
+
+.pm-overview-theme h4 {
+  margin: 0;
+  color: var(--pm-ink);
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.pm-overview-theme p {
+  margin: 0.35rem 0 0;
+  color: var(--pm-muted);
+  font-size: 0.97rem;
+  line-height: 1.65;
+}
+
+.pm-overview-metrics {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.9rem;
+  padding: 1rem 1.1rem;
+}
+
+.pm-overview-metric {
+  display: flex;
+  min-height: 5.6rem;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.72);
+  padding: 0.9rem 1rem;
+}
+
+.pm-overview-metric strong {
+  color: var(--pm-ink);
+  font-size: 1.85rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.pm-overview-metric span {
+  margin-top: 0.3rem;
+  color: var(--pm-muted);
+  font-size: 0.94rem;
+  font-weight: 700;
+  line-height: 1.35;
 }
 
 .pm-news-list {
@@ -278,10 +398,15 @@
 }
 
 @media (max-width: 1024px) {
+  .hbb-section[id="overview"] > div,
   .hbb-section[id="talks"] > div,
   .hbb-section[id="papers"] > div,
   .hbb-section[id="projects"] > div {
     width: min(100%, calc(100vw - 1.8rem));
+  }
+
+  .pm-overview-grid {
+    grid-template-columns: 1fr;
   }
 
   .pm-project-grid {
@@ -307,6 +432,10 @@
     grid-template-columns: 1fr;
   }
 
+  .pm-overview-metrics {
+    grid-template-columns: 1fr 1fr;
+  }
+
   .pm-publication-rail,
   .pm-project-mark {
     min-height: auto;
@@ -318,5 +447,11 @@
 
   .pm-home-section {
     padding: 0;
+  }
+}
+
+@media (max-width: 560px) {
+  .pm-overview-metrics {
+    grid-template-columns: 1fr;
   }
 }
