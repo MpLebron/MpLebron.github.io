@@ -39,7 +39,7 @@ education:
     date_start: 2022-09-01
     date_end: ""
     summary: |
-      PhD-track student advised by Prof. Min Chen. Current work focuses on knowledge-data-model synergy, service-oriented geographic modeling, and reproducible scientific workflows.
+      PhD-track student advised by [Prof. Min Chen](https://scholar.google.com/citations?user=wvX9vacAAAAJ). Current work focuses on knowledge-data-model synergy, service-oriented geographic modeling, and reproducible scientific workflows.
   - area: BSc in GIS
     institution: Nantong University
     date_start: 2018-09-01
@@ -132,8 +132,8 @@ awards:
 
 ## About Me
 
-Peilong Ma is a PhD candidate in Cartography and Geographic Information Systems at Nanjing Normal University, advised by Prof. Min Chen. His research centers on intelligent geographic modeling, geospatial information services, and open science infrastructures for AI for Science.
+Peilong Ma is a PhD candidate in Cartography and Geographic Information Systems at Nanjing Normal University, advised by [Prof. Min Chen](https://scholar.google.com/citations?user=wvX9vacAAAAJ). His research centers on intelligent geographic modeling, geospatial information services, AI for Science, and open science infrastructures.
 
-He studies how domain knowledge, model resources, and computational services can be organized into reusable workflows for geographic analysis, simulation, and decision support. He contributes to OpenGMP and develops research software such as PyGeoModel and OpenGeoLab to support model discovery, sensitivity analysis, and reproducible workflows.
+He studies how domain knowledge, model resources, and computational services can be organized into reusable workflows for geographic analysis, simulation, and decision support. He contributes to [OpenGMS](https://geomodeling.njnu.edu.cn/) and [OpenGMP](https://geomodeling.njnu.edu.cn/OpenGMP/#/) and develops research software such as [PyGeoModel](https://github.com/MpLebron/PyGeoModel) and [OpenGeoLab](/publication/opengeolab-under-review/) to support model discovery, sensitivity analysis, and reproducible workflows.
 
 His recent work includes knowledge-driven hydrological sensitivity analysis, open knowledge frameworks for geoscientific models, and interactive tools for geographic modeling. He has authored 10 journal papers, received nearly 200 citations, and holds five Chinese invention patents together with two software copyrights.

@@ -80,6 +80,27 @@ sections:
               <article class="pm-publication-card">
                 <div class="pm-publication-rail">
                   <div>
+                    <div class="pm-publication-year">2026</div>
+                    <div class="pm-publication-type">Under review</div>
+                  </div>
+                  <div class="pm-publication-venue">Preprint</div>
+                  <div class="pm-publication-role">First author</div>
+                </div>
+                <div class="pm-publication-main">
+                  <h3><a href="/publication/pygeomodel-under-review/">PyGeoModel: A Python Package for Integrating Intelligent Geographic Model Services for Urban Analysis in Jupyter</a></h3>
+                  <p class="pm-publication-authors"><strong>Peilong Ma</strong>, Min Chen, Dichen Liu, Wei Xie, Tianyu Sheng, Zaiyang Ma, Yongning Wen, Songshan Yue, Guonian Lu</p>
+                  <p class="pm-publication-venue-line"><em>Preprint, under review</em></p>
+                  <p class="pm-publication-summary">Presents PyGeoModel as a Jupyter-centered environment for integrating intelligent geographic model services into interactive urban analysis and reproducible research workflows.</p>
+                  <div class="pm-chip-row">
+                    <a class="pm-chip" href="/publication/pygeomodel-under-review/">Details</a>
+                    <a class="pm-chip" href="/uploads/pygeomodel-under-review.pdf">PDF</a>
+                    <a class="pm-chip" href="https://github.com/MpLebron/PyGeoModel">Code</a>
+                  </div>
+                </div>
+              </article>
+              <article class="pm-publication-card">
+                <div class="pm-publication-rail">
+                  <div>
                     <div class="pm-publication-year">2025</div>
                     <div class="pm-publication-type">Journal Article</div>
                   </div>
