@@ -97,7 +97,6 @@ sections:
                   </div>
                 </div>
               </article>
-
               <article class="pm-publication-card">
                 <div class="pm-publication-rail">
                   <div>
@@ -119,7 +118,6 @@ sections:
                   </div>
                 </div>
               </article>
-
               <article class="pm-publication-card">
                 <div class="pm-publication-rail">
                   <div>
@@ -141,7 +139,6 @@ sections:
                   </div>
                 </div>
               </article>
-
               <article class="pm-publication-card">
                 <div class="pm-publication-rail">
                   <div>
@@ -163,7 +160,6 @@ sections:
                   </div>
                 </div>
               </article>
-
               <article class="pm-publication-card">
                 <div class="pm-publication-rail">
                   <div>
@@ -215,7 +211,6 @@ sections:
                   </div>
                 </div>
               </article>
-
               <article class="pm-project-card">
                 <div class="pm-project-mark pm-project-mark-mcp">MCP</div>
                 <div class="pm-project-main">
@@ -228,7 +223,6 @@ sections:
                   </div>
                 </div>
               </article>
-
               <article class="pm-project-card">
                 <div class="pm-project-mark pm-project-mark-sam">SAM</div>
                 <div class="pm-project-main">
