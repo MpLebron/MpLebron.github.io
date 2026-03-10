@@ -1,0 +1,111 @@
+{{ $pubSection := site.GetPage "section" "publication" }}
+{{ if $pubSection }}
+<div class="pm-home-section">
+  <div class="pm-section-label pm-section-label-sand">Selected Publications</div>
+  <div class="pm-board pm-board-sand">
+    <div class="pm-publication-list">
+      {{ range $pub := $pubSection.RegularPages.ByDate.Reverse }}
+        {{ $slug := path.Base (path.Clean $pub.File.Dir) }}
+        {{ $thumbRel := "" }}
+        {{ range slice "png" "jpg" "jpeg" "webp" }}
+          {{ if eq $thumbRel "" }}
+            {{ with resources.Get (printf "media/pics/papers/%s.%s" $slug .) }}
+              {{ $thumbRel = .RelPermalink }}
+            {{ end }}
+          {{ end }}
+        {{ end }}
+
+        {{ $authors := $pub.Params.authors | default (slice) }}
+        {{ $authorNames := slice }}
+        {{ $adminIndex := -1 }}
+        {{ range $i, $author := $authors }}
+          {{ $name := printf "%v" $author }}
+          {{ if eq $name "admin" }}
+            {{ $name = "<strong>Peilong Ma</strong>" }}
+            {{ $adminIndex = $i }}
+          {{ end }}
+          {{ $authorNames = $authorNames | append $name }}
+        {{ end }}
+
+        {{ $role := "Co-author" }}
+        {{ if eq $adminIndex 0 }}
+          {{ $role = "First author" }}
+          {{ with $pub.Params.author_notes }}
+            {{ if gt (len .) $adminIndex }}
+              {{ $note := index . $adminIndex }}
+              {{ if $note }}
+                {{ $role = $note }}
+              {{ end }}
+            {{ end }}
+          {{ end }}
+        {{ end }}
+
+        {{ $publicationLine := replaceRE "\\*" "" (default $pub.Params.publication_short $pub.Params.publication) }}
+        {{ $typeLabel := "Article" }}
+        {{ if in (lower $publicationLine) "under review" }}
+          {{ $typeLabel = "Under review" }}
+        {{ else if in ($pub.Params.publication_types | default (slice)) "article-journal" }}
+          {{ $typeLabel = "Journal article" }}
+        {{ end }}
+
+        {{ $sourceLabel := "Article" }}
+        {{ with $pub.Params.url_source }}
+          {{ if in (lower .) "ssrn.com" }}
+            {{ $sourceLabel = "SSRN" }}
+          {{ end }}
+        {{ end }}
+
+        <article class="pm-publication-card">
+          <div class="pm-publication-visual">
+            <a class="pm-publication-thumb" href="{{ $pub.RelPermalink }}">
+              {{ if $thumbRel }}
+                <img src="{{ $thumbRel }}" alt="{{ $pub.Title }}" loading="lazy" decoding="async">
+              {{ else }}
+                <div class="pm-publication-thumb-fallback">
+                  <span class="pm-publication-thumb-year">{{ $pub.Date.Format "2006" }}</span>
+                  <span class="pm-publication-thumb-title">{{ $pub.Title }}</span>
+                </div>
+              {{ end }}
+            </a>
+          </div>
+
+          <div class="pm-publication-main">
+            <div class="pm-publication-meta">
+              <span class="pm-meta-pill">{{ $pub.Date.Format "2006-01-02" }}</span>
+              <span class="pm-meta-pill">{{ $typeLabel }}</span>
+              <span class="pm-meta-pill">{{ $role }}</span>
+            </div>
+
+            <h3><a href="{{ $pub.RelPermalink }}">{{ $pub.Title }}</a></h3>
+            <p class="pm-publication-authors">{{ delimit $authorNames ", " | safeHTML }}</p>
+            {{ with $publicationLine }}
+              <p class="pm-publication-venue-line">{{ . }}</p>
+            {{ end }}
+            {{ with $pub.Params.summary }}
+              <p class="pm-publication-summary">{{ . }}</p>
+            {{ end }}
+
+            <div class="pm-chip-row">
+              <a class="pm-chip" href="{{ $pub.RelPermalink }}">Details</a>
+              {{ with $pub.Params.url_pdf }}
+                <a class="pm-chip" href="{{ . }}">PDF</a>
+              {{ end }}
+              {{ with $pub.Params.url_source }}
+                <a class="pm-chip" href="{{ . }}">{{ $sourceLabel }}</a>
+              {{ end }}
+              {{ with $pub.Params.url_code }}
+                <a class="pm-chip" href="{{ . }}">Code</a>
+              {{ end }}
+              {{ with $pub.Params.url_project }}
+                {{ if ne . $pub.Params.url_code }}
+                  <a class="pm-chip" href="{{ . }}">Project</a>
+                {{ end }}
+              {{ end }}
+            </div>
+          </div>
+        </article>
+      {{ end }}
+    </div>
+  </div>
+</div>
+{{ end }}

@@ -384,37 +384,86 @@
 
 .pm-publication-card {
   display: grid;
-  grid-template-columns: 11.2rem minmax(0, 1fr);
+  grid-template-columns: minmax(17.5rem, 20rem) minmax(0, 1fr);
   gap: 1.2rem;
+  align-items: start;
   padding: 1.15rem;
   border-radius: 1.2rem;
   background: rgba(255, 255, 255, 0.28);
   border: 1px solid rgba(8, 47, 67, 0.08);
 }
 
-.pm-publication-rail {
-  display: flex;
-  min-height: 11rem;
-  flex-direction: column;
-  justify-content: space-between;
+.pm-publication-visual {
+  min-width: 0;
+}
+
+.pm-publication-thumb {
+  display: block;
+  width: 100%;
+  overflow: hidden;
   border-radius: 1rem;
-  padding: 0.85rem;
+  aspect-ratio: 16 / 9;
+  border: 1px solid rgba(8, 47, 67, 0.12);
   background: linear-gradient(160deg, rgba(8, 47, 67, 0.97), rgba(37, 96, 122, 0.92));
+}
+
+.pm-publication-thumb img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pm-publication-thumb-fallback {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 0.45rem;
+  padding: 1rem;
   color: #fff;
 }
 
-.pm-publication-year {
-  font-size: 2.15rem;
+.pm-publication-thumb-year {
+  font-size: 2rem;
   font-weight: 900;
   line-height: 0.95;
 }
 
-.pm-publication-type,
-.pm-publication-role,
-.pm-publication-venue {
-  font-size: 0.76rem;
-  font-weight: 700;
+.pm-publication-thumb-title {
+  display: -webkit-box;
+  overflow: hidden;
+  font-size: 1rem;
+  font-weight: 800;
+  line-height: 1.25;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+.pm-publication-main {
+  min-width: 0;
+}
+
+.pm-publication-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-bottom: 0.65rem;
+}
+
+.pm-meta-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.34rem 0.62rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.74);
+  border: 1px solid rgba(8, 47, 67, 0.08);
+  color: var(--pm-ink);
+  font-size: 0.72rem;
+  font-weight: 800;
   letter-spacing: 0.04em;
+  line-height: 1;
   text-transform: uppercase;
 }
 
@@ -595,7 +644,6 @@
     grid-template-columns: 1fr 1fr;
   }
 
-  .pm-publication-rail,
   .pm-project-mark {
     min-height: auto;
   }
