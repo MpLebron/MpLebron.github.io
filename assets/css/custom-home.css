@@ -46,6 +46,42 @@
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
 }
 
+#section-resume-biography-3 .hero-left-column {
+  width: min(21rem, 100%);
+}
+
+#section-resume-biography-3 .hero-right-column {
+  max-width: 46rem;
+}
+
+#section-resume-biography-3 .hero-side-meta {
+  display: grid;
+  gap: 1.5rem;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+#section-resume-biography-3 .hero-side-block {
+  width: 100%;
+  text-align: left;
+}
+
+#section-resume-biography-3 .hero-side-block .section-subheading {
+  margin-bottom: 0.7rem;
+}
+
+#section-resume-biography-3 .hero-side-block ul {
+  margin: 0;
+}
+
+#section-resume-biography-3 .hero-side-block li {
+  margin-bottom: 0.45rem;
+}
+
+#section-resume-biography-3 .hero-side-block li:last-child {
+  margin-bottom: 0;
+}
+
 .hbb-section[id="talks"],
 .hbb-section[id="overview"],
 .hbb-section[id="papers"],
@@ -465,6 +501,16 @@
 }
 
 @media (max-width: 768px) {
+  #section-resume-biography-3 .hero-left-column,
+  #section-resume-biography-3 .hero-right-column {
+    width: 100%;
+    max-width: none;
+  }
+
+  #section-resume-biography-3 .hero-side-meta {
+    margin-top: 1.5rem;
+  }
+
   .pm-board {
     padding: 1.4rem;
     border-radius: 1.35rem;
