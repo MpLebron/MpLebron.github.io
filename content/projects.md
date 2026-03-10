@@ -12,7 +12,7 @@ sections:
   - block: collection
     content:
       title: Selected Projects
-      text: I enjoy making things. Here are a selection of projects that I have worked on over the years.
+      text: Research software and open-source tools for geographic modeling, geospatial AI, and interactive scientific computing.
       filters:
         folders:
           - project

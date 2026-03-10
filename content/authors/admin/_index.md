@@ -1,186 +1,141 @@
 ---
-# Display name
 title: 马培龙
-
-# Name pronunciation (optional)
-name_pronunciation: Ma pei long
-
-# Full name (for SEO)
+name_pronunciation: Ma Pei-long
 first_name: Peilong
 last_name: Ma
 
-# Status emoji
 status:
-  icon: ☕️
+  icon: 🌍
 
-# Is this the primary user of the site?
 superuser: true
-
-# Highlight the author in author lists? (true/false)
 highlight_name: true
+role: PhD Candidate in Cartography and GIS
 
-# Role/position/tagline
-role: Phd Candidate
-
-# Organizations/Affiliations to display in Biography blox
 organizations:
-  - name: OpenGMS
+  - name: OpenGMS Lab, Nanjing Normal University
     url: https://geomodeling.njnu.edu.cn/
 
-# Social network links
-# Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
   - icon: at-symbol
-    url: "mailto:llonggis@163.com"
+    url: "mailto:mpl_gis@nnu.edu.cn"
     label: E-mail Me
-  # - icon: brands/x
-  # url: https://twitter.com/GetResearchDev
-  # - icon: brands/instagram
-  # url: https://www.instagram.com/
   - icon: brands/github
-    url: https://github.com/MPLebron
-  # - icon: brands/linkedin
-  # url: https://www.linkedin.com/
+    url: https://github.com/MpLebron
   - icon: academicons/google-scholar
     url: https://scholar.google.com/citations?user=vq82hiEAAAAJ&hl
   - icon: academicons/orcid
     url: https://orcid.org/0000-0002-2865-9515
+  - icon: link
+    url: https://geomodeling.njnu.edu.cn/
+    label: Lab
 
 interests:
-  - Intelligent GeoModeling
-  - Human-AI Interaction
-  - Knowledge-based Recommendation System
+  - Intelligent Geographic Modeling
+  - Geospatial Information Services
+  - AI for Science
+  - Open Science Infrastructure
 
 education:
-  - area: PhD Artificial Intelligence
-    institution: Stanford University
-    date_start: 2016-01-01
-    date_end: 2020-12-31
+  - area: PhD Candidate in Cartography and Geographic Information Systems
+    institution: Nanjing Normal University
+    date_start: 2022-09-01
+    date_end: ""
     summary: |
-      Thesis on _Why LLMs are awesome_. Supervised by [Prof Joe Smith](https://example.com). Presented papers at 5 IEEE conferences with the contributions being published in 2 Springer journals.
-    button:
-      text: "Read Thesis"
-      url: "https://example.com"
-  - area: MEng Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    date_start: 2016-01-01
-    date_end: 2020-12-31
+      PhD-track student advised by Prof. Min Chen. Current work focuses on knowledge-data-model synergy, service-oriented geographic modeling, and reproducible scientific workflows.
+  - area: BSc in Geographic Information Science
+    institution: Nantong University
+    date_start: 2018-09-01
+    date_end: 2022-06-30
     summary: |
-      GPA: 3.8/4.0
+      Graduated as an Outstanding Graduate. Built an early research foundation in GIS, remote sensing, and spatial analysis.
 
-      Courses included:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - area: BSc Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    date_start: 2016-01-01
-    date_end: 2020-12-31
-    summary: |
-      GPA: 3.4/4.0
-
-      Courses included:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
 work:
-  - position: Director of Cloud Infrastructure
-    company_name: GenCoin
-    company_url: ""
+  - position: Researcher and Core Developer
+    company_name: OpenGMS / OpenGMP
+    company_url: https://geomodeling.njnu.edu.cn/
     company_logo: ""
-    date_start: 2021-01-01
+    date_start: 2022-09-01
     date_end: ""
     summary: |2-
-      Responsibilities include:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - position: Backend Software Engineer
-    company_name: X
-    company_url: ""
+      Develop open infrastructures for geographic modeling, including model knowledge organization, service integration, and reproducible workflows for scientific analysis and decision support.
+  - position: Open-source Developer
+    company_name: PyGeoModel
+    company_url: https://github.com/MpLebron/PyGeoModel
     company_logo: ""
-    date_start: 2016-01-01
-    date_end: 2020-12-31
+    date_start: 2025-01-01
+    date_end: ""
     summary: |
-      Responsibilities include:
-      - Migrated infrastructure to a new data center
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+      Build intelligent Jupyter-based tooling for geographic model recommendation, configuration, and execution in interactive research environments.
 
-# Skills
-# Add your own SVG icons to `assets/media/icons/`
 skills:
-  - name: Technical Skills
+  - name: Research Areas
     items:
-      - name: Python
-        description: ""
-        percent: 80
-        icon: code-bracket
-      - name: Data Science
+      - name: Intelligent Geographic Modeling
         description: ""
         percent: 100
         icon: chart-bar
-      - name: SQL
+      - name: Geospatial Information Services
         description: ""
-        percent: 40
+        percent: 95
+        icon: globe-alt
+      - name: AI for Science
+        description: ""
+        percent: 90
+        icon: cpu-chip
+      - name: Open Science Infrastructure
+        description: ""
+        percent: 90
         icon: circle-stack
-  - name: Hobbies
-    color: "#eeac02"
-    color_border: "#f0bf23"
+  - name: Methods and Tools
     items:
-      - name: Hiking
+      - name: Python
         description: ""
-        percent: 60
-        icon: person-simple-walk
-      - name: Cats
+        percent: 95
+        icon: code-bracket
+      - name: Jupyter and Research Software
         description: ""
-        percent: 100
-        icon: cat
-      - name: Photography
+        percent: 90
+        icon: command-line
+      - name: GIS and Remote Sensing
         description: ""
         percent: 80
-        icon: camera
+        icon: map
+      - name: Model Service Integration
+        description: ""
+        percent: 85
+        icon: cloud
 
 languages:
-  - name: English
-    percent: 100
   - name: Chinese
-    percent: 75
-  - name: Portuguese
-    percent: 25
+    percent: 100
+  - name: English
+    percent: 80
 
-# Awards.
-#   Add/remove as many awards below as you like.
-#   Only `title`, `awarder`, and `date` are required.
-#   Begin multi-line `summary` with YAML's `|` or `|2-` multi-line prefix and indent 2 spaces below.
 awards:
-  - title: Neural Networks and Deep Learning
-    url: https://www.coursera.org/learn/neural-networks-deep-learning
-    date: "2023-11-25"
-    awarder: Coursera
-    icon: coursera
+  - title: Best Paper
+    date: "2025-06-01"
+    awarder: 32nd International Conference on Geoinformatics and CPGIS Annual Conference
+    icon: award
     summary: |
-      I studied the foundational concept of neural networks and deep learning. By the end, I was familiar with the significant technological trends driving the rise of deep learning; build, train, and apply fully connected deep neural networks; implement efficient (vectorized) neural networks; identify key parameters in a neural network’s architecture; and apply deep learning to your own applications.
-  - title: Blockchain Fundamentals
-    url: https://www.edx.org/professional-certificate/uc-berkeleyx-blockchain-fundamentals
-    date: "2023-07-01"
-    awarder: edX
-    icon: edx
+      Awarded for the presentation "PyGeoModel: A Python Package for Integrating Intelligent Geographic Model Services into Jupyter's Interactive Computing Environment."
+  - title: Doctoral Academic Rising Star Program
+    date: "2024-01-01"
+    awarder: Nanjing Normal University
+    icon: star
     summary: |
-      Learned:
-      - Synthesize your own blockchain solutions
-      - Gain an in-depth understanding of the specific mechanics of Bitcoin
-      - Understand Bitcoin’s real-life applications and learn how to attack and destroy Bitcoin, Ethereum, smart contracts and Dapps, and alternatives to Bitcoin’s Proof-of-Work consensus algorithm
-  - title: "Object-Oriented Programming in R"
-    url: https://www.datacamp.com/courses/object-oriented-programming-with-s3-and-r6-in-r
-    certificate_url: https://www.datacamp.com
-    date: "2023-01-21"
-    awarder: datacamp
-    icon: datacamp
+      Selected into the university program supporting outstanding early-career doctoral researchers.
+  - title: First-Class Scholarship
+    date: "2024-01-01"
+    awarder: Nanjing Normal University
+    icon: trophy
     summary: |
-      Object-oriented programming (OOP) lets you specify relationships between functions and the objects that they can act on, helping you manage complexity in your code. This is an intermediate level course, providing an introduction to OOP, using the S3 and R6 systems. S3 is a great day-to-day R programming tool that simplifies some of the functions that you write. R6 is especially useful for industry-specific analyses, working with web APIs, and building GUIs.
+      Repeatedly awarded for excellent academic performance and research achievements.
 ---
 
 ## About Me
 
-Chien Shiung Wu is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+Peilong Ma is a PhD candidate in Cartography and Geographic Information Systems at Nanjing Normal University, advised by Prof. Min Chen. His research centers on intelligent geographic modeling, geospatial information services, and open science infrastructures for AI for Science.
+
+He contributes to OpenGMP and develops research software such as PyGeoModel to support model discovery, sensitivity analysis, and reproducible workflows. His work has been published in venues including *Journal of Hydrology*, *Transactions in GIS*, and *Remote Sensing*.
+
+He has authored 10 journal papers, received nearly 200 citations, and holds five Chinese invention patents together with two software copyrights.

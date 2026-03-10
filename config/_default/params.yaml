@@ -14,8 +14,8 @@ marketing:
     site_type: Person
     local_business_type: ""
     org_name: ""
-    description: "The highly-customizable Hugo Academic theme powered by Hugo Blox Builder. Easily create your personal academic website."
-    twitter: "GetResearchDev"
+    description: "Peilong Ma is a PhD candidate at Nanjing Normal University working on geospatial information services, AI for Science, and open infrastructures for geographic modeling."
+    twitter: ""
   analytics:
     google_analytics: ""
     baidu_tongji: ""
@@ -40,9 +40,9 @@ header:
 # Site footer
 footer:
   copyright:
-    notice: "© {year} Me. This work is licensed under {license}"
+    notice: "© {year} Peilong Ma"
     license:
-      enable: true
+      enable: false
       allow_derivatives: false
       share_alike: true
       allow_commercial: false
