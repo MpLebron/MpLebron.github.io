@@ -1,6 +1,5 @@
 ---
-title: 马培龙
-name_pronunciation: Ma Pei-long
+title: Peilong Ma
 first_name: Peilong
 last_name: Ma
 
@@ -30,7 +29,6 @@ profiles:
     label: Lab
 
 interests:
-  - Intelligent Geographic Modeling
   - Geospatial Information Services
   - AI for Science
   - Open Science Infrastructure
@@ -42,7 +40,7 @@ education:
     date_end: ""
     summary: |
       PhD-track student advised by Prof. Min Chen. Current work focuses on knowledge-data-model synergy, service-oriented geographic modeling, and reproducible scientific workflows.
-  - area: BSc in Geographic Information Science
+  - area: BSc in GIS
     institution: Nantong University
     date_start: 2018-09-01
     date_end: 2022-06-30
