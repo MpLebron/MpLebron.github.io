@@ -52,13 +52,18 @@
         {{ end }}
         <article class="pm-project-card pm-project-card-media">
           <div class="pm-project-visual">
-            <a class="pm-project-thumb" href="{{ $project.url }}">
+            <button
+              type="button"
+              class="pm-project-thumb pm-image-trigger"
+              data-lightbox-src="{{ $thumbRel }}"
+              data-lightbox-alt="{{ $project.title }}"
+              aria-label="Open project image">
               {{ if $thumbRel }}
                 <img src="{{ $thumbRel }}" alt="{{ $project.title }}" loading="lazy" decoding="async">
               {{ else }}
                 <div class="pm-project-thumb-fallback">{{ $project.title }}</div>
               {{ end }}
-            </a>
+            </button>
           </div>
           <div class="pm-project-main">
             <h3><a href="{{ $project.url }}">{{ $project.title }}</a></h3>

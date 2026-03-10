@@ -677,6 +677,77 @@
   opacity: 0.92;
 }
 
+.pm-image-trigger {
+  appearance: none;
+  cursor: zoom-in;
+}
+
+.pm-avatar-trigger {
+  display: block;
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+
+.pm-lightbox-open {
+  overflow: hidden;
+}
+
+.pm-lightbox[hidden] {
+  display: none;
+}
+
+.pm-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+}
+
+.pm-lightbox-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(10, 20, 28, 0.52);
+  backdrop-filter: blur(2px);
+}
+
+.pm-lightbox-dialog {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.pm-lightbox-image {
+  display: block;
+  max-width: min(92vw, 1200px);
+  max-height: 88vh;
+  border-radius: 1rem;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.32);
+  background: #fff;
+}
+
+.pm-lightbox-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  display: inline-flex;
+  height: 2.75rem;
+  width: 2.75rem;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.94);
+  color: #082f43;
+  font-size: 2rem;
+  line-height: 1;
+  cursor: pointer;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.2);
+}
+
 @media (max-width: 1024px) {
   .hbb-section[id="overview"] > div,
   .hbb-section[id="talks"] > div,
@@ -735,6 +806,15 @@
 
   .pm-home-section {
     padding: 0;
+  }
+
+  .pm-lightbox-dialog {
+    padding: 1rem;
+  }
+
+  .pm-lightbox-close {
+    top: 0.75rem;
+    right: 0.75rem;
   }
 }
 

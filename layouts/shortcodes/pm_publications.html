@@ -71,7 +71,12 @@
 
         <article class="pm-publication-card">
           <div class="pm-publication-visual">
-            <a class="pm-publication-thumb" href="{{ $pub.RelPermalink }}">
+            <button
+              type="button"
+              class="pm-publication-thumb pm-image-trigger"
+              data-lightbox-src="{{ $thumbRel }}"
+              data-lightbox-alt="{{ $pub.Title }}"
+              aria-label="Open publication image">
               {{ if $thumbRel }}
                 <img src="{{ $thumbRel }}" alt="{{ $pub.Title }}" loading="lazy" decoding="async">
               {{ else }}
@@ -80,7 +85,7 @@
                   <span class="pm-publication-thumb-title">{{ $pub.Title }}</span>
                 </div>
               {{ end }}
-            </a>
+            </button>
           </div>
 
           <div class="pm-publication-main">

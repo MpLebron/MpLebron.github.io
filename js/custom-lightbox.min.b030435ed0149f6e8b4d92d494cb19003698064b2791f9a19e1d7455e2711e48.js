@@ -1,0 +1,7 @@
+document.addEventListener("DOMContentLoaded",()=>{const s=Array.from(document.querySelectorAll(".pm-image-trigger[data-lightbox-src]"));if(!s.length)return;const e=document.createElement("div");e.className="pm-lightbox",e.setAttribute("hidden",""),e.innerHTML=`
+    <div class="pm-lightbox-backdrop" data-lightbox-close="true"></div>
+    <div class="pm-lightbox-dialog" role="dialog" aria-modal="true" aria-label="Image preview">
+      <button type="button" class="pm-lightbox-close" aria-label="Close image preview">&times;</button>
+      <img class="pm-lightbox-image" alt="">
+    </div>
+  `,document.body.appendChild(e);const t=e.querySelector(".pm-lightbox-image"),o=e.querySelector(".pm-lightbox-close"),n=()=>{e.setAttribute("hidden",""),document.body.classList.remove("pm-lightbox-open"),t.removeAttribute("src"),t.removeAttribute("alt")},i=(n,s)=>{t.src=n,t.alt=s||"",e.removeAttribute("hidden"),document.body.classList.add("pm-lightbox-open"),o.focus()};s.forEach(e=>{e.addEventListener("click",()=>{i(e.dataset.lightboxSrc,e.dataset.lightboxAlt)})}),e.addEventListener("click",t=>{(t.target===e||t.target.dataset.lightboxClose==="true")&&n()}),o.addEventListener("click",n),document.addEventListener("keydown",t=>{t.key==="Escape"&&!e.hasAttribute("hidden")&&n()})})
