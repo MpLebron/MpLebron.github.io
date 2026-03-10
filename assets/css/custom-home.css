@@ -64,22 +64,30 @@
 
 #section-resume-biography-3 .hero-left-column {
   display: flex;
+  align-items: center;
   justify-content: center;
   width: 100%;
-  padding-top: 0.4rem;
 }
 
 #section-resume-biography-3 #profile {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.45rem;
 }
 
 #section-resume-biography-3 .portrait-title {
-  width: min(23rem, 100%);
+  width: min(24rem, 100%);
   text-align: center;
 }
 
-#section-resume-biography-3 .portrait-title h3 {
-  width: 100%;
+#section-resume-biography-3 .portrait-title > div:first-child {
+  margin-bottom: 0;
+  margin-top: 1.25rem;
+  font-size: clamp(2.4rem, 3vw, 3rem);
+  line-height: 1.02;
+  letter-spacing: -0.04em;
 }
 
 #section-resume-biography-3 .bio-text h2 {
@@ -100,13 +108,17 @@
   display: grid;
   gap: 1.45rem;
   width: 100%;
-  max-width: 23rem;
-  padding-top: 1.25rem;
+  max-width: 24rem;
+  padding-top: 0.1rem;
+  border: 0 !important;
+  box-shadow: none !important;
 }
 
 #section-resume-biography-3 .hero-side-block {
   width: 100%;
   text-align: left;
+  border: 0 !important;
+  box-shadow: none !important;
 }
 
 #section-resume-biography-3 .hero-side-block .section-subheading {
@@ -117,6 +129,10 @@
 
 #section-resume-biography-3 .hero-side-block ul {
   margin: 0;
+}
+
+#section-resume-biography-3 .hero-side-block:first-child {
+  padding-top: 0;
 }
 
 #section-resume-biography-3 .hero-side-block li {

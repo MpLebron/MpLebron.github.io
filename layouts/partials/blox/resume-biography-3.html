@@ -64,16 +64,6 @@
           {{- $person_page.Title -}}
         {{- end -}}
       </div>
-
-      {{ with $person.role }}<h3 class="font-semibold mb-1">{{ . | markdownify | emojify }}</h3>{{ end }}
-
-      {{ range $person.organizations }}
-      <div class="mb-2">
-        {{ with .url }}<a href="{{ . }}" target="_blank" rel="noopener">{{ end }}
-        <div>{{ .name }}</div>
-        {{ if .url }}</a>{{ end }}
-      </div>
-      {{ end }}
     </div>
 
     <ul class="network-icon dark:text-zinc-100">
