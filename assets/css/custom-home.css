@@ -401,7 +401,7 @@
 
 .pm-project-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: 1fr;
   gap: 1.1rem;
 }
 
@@ -460,10 +460,6 @@
   }
 
   .pm-overview-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .pm-project-grid {
     grid-template-columns: 1fr;
   }
 }
