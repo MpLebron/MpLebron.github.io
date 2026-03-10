@@ -1,0 +1,75 @@
+{{ $projects := slice
+  (dict
+    "slug" "pygeomodel"
+    "title" "PyGeoModel"
+    "url" "https://github.com/MpLebron/PyGeoModel"
+    "summary" "An intelligent Python package for urban and geographic modeling within Jupyter environments, integrating model recommendation, interactive configuration, question answering, and service-based execution."
+    "links" (slice
+      (dict "label" "Code" "url" "https://github.com/MpLebron/PyGeoModel")
+      (dict "label" "PyPI" "url" "https://pypi.org/project/PyGeoModel/")
+    )
+    "tags" (slice "Jupyter" "GeoModeling")
+  )
+  (dict
+    "slug" "geo-data-processor-mcp"
+    "title" "GeoDataProcessor-MCP"
+    "url" "https://github.com/MpLebron/GeoDataProcessor-MCP"
+    "summary" "An MCP server for geospatial data processing tools, exposing WhiteBox and SAGA GIS style capabilities through a standardized interface for language-model-based agents and desktop assistants."
+    "links" (slice
+      (dict "label" "Code" "url" "https://github.com/MpLebron/GeoDataProcessor-MCP")
+    )
+    "tags" (slice "MCP server" "GIS tools")
+  )
+  (dict
+    "slug" "rs-segmentation"
+    "title" "RS_Segmentation"
+    "url" "https://github.com/MpLebron/RS_Segmentation"
+    "summary" "An intelligent segmentation system for remote sensing and GIS imagery, supporting text-prompt segmentation, point-based refinement, GeoTIFF overlay browsing, Shapefile export, and optional voice interaction."
+    "links" (slice
+      (dict "label" "Code" "url" "https://github.com/MpLebron/RS_Segmentation")
+      (dict "label" "Demo" "url" "https://sam-agent.gagogroup.cn")
+    )
+    "tags" (slice "Geospatial AI" "SAM/SAM3")
+  )
+}}
+
+<div class="pm-home-section">
+  <div class="pm-section-label pm-section-label-sky">Open-Source Projects</div>
+  <div class="pm-board pm-board-sky">
+    <div class="pm-project-grid">
+      {{ range $project := $projects }}
+        {{ $thumbRel := "" }}
+        {{ range slice "png" "jpg" "jpeg" "webp" }}
+          {{ if eq $thumbRel "" }}
+            {{ with resources.Get (printf "media/pics/projects/%s.%s" $project.slug .) }}
+              {{ $thumbRel = .RelPermalink }}
+            {{ end }}
+          {{ end }}
+        {{ end }}
+        <article class="pm-project-card pm-project-card-media">
+          <div class="pm-project-visual">
+            <a class="pm-project-thumb" href="{{ $project.url }}">
+              {{ if $thumbRel }}
+                <img src="{{ $thumbRel }}" alt="{{ $project.title }}" loading="lazy" decoding="async">
+              {{ else }}
+                <div class="pm-project-thumb-fallback">{{ $project.title }}</div>
+              {{ end }}
+            </a>
+          </div>
+          <div class="pm-project-main">
+            <h3><a href="{{ $project.url }}">{{ $project.title }}</a></h3>
+            <p>{{ $project.summary }}</p>
+            <div class="pm-chip-row">
+              {{ range $link := $project.links }}
+                <a class="pm-chip" href="{{ $link.url }}">{{ $link.label }}</a>
+              {{ end }}
+              {{ range $tag := $project.tags }}
+                <span class="pm-chip pm-chip-static">{{ $tag }}</span>
+              {{ end }}
+            </div>
+          </div>
+        </article>
+      {{ end }}
+    </div>
+  </div>
+</div>

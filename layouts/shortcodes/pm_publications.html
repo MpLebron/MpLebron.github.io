@@ -28,8 +28,7 @@
         {{ end }}
 
         {{ $role := "Co-author" }}
-        {{ if eq $adminIndex 0 }}
-          {{ $role = "First author" }}
+        {{ if ge $adminIndex 0 }}
           {{ with $pub.Params.author_notes }}
             {{ if gt (len .) $adminIndex }}
               {{ $note := index . $adminIndex }}
@@ -38,12 +37,17 @@
               {{ end }}
             {{ end }}
           {{ end }}
+          {{ if and (eq $role "Co-author") (eq $adminIndex 0) }}
+            {{ $role = "First author" }}
+          {{ end }}
         {{ end }}
 
         {{ $publicationLine := replaceRE "\\*" "" (default $pub.Params.publication_short $pub.Params.publication) }}
         {{ $typeLabel := "Article" }}
         {{ if in (lower $publicationLine) "under review" }}
           {{ $typeLabel = "Under review" }}
+        {{ else if in ($pub.Params.publication_types | default (slice)) "paper-conference" }}
+          {{ $typeLabel = "Conference paper" }}
         {{ else if in ($pub.Params.publication_types | default (slice)) "article-journal" }}
           {{ $typeLabel = "Journal article" }}
         {{ end }}

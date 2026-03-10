@@ -404,14 +404,15 @@
   border-radius: 1rem;
   aspect-ratio: 16 / 9;
   border: 1px solid rgba(8, 47, 67, 0.12);
-  background: linear-gradient(160deg, rgba(8, 47, 67, 0.97), rgba(37, 96, 122, 0.92));
+  background: rgba(255, 255, 255, 0.82);
 }
 
 .pm-publication-thumb img {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  background: #fff;
 }
 
 .pm-publication-thumb-fallback {
@@ -559,6 +560,44 @@
   border-radius: 1.2rem;
   background: rgba(255, 255, 255, 0.26);
   border: 1px solid rgba(8, 47, 67, 0.08);
+}
+
+.pm-project-card-media {
+  grid-template-columns: minmax(17.5rem, 20rem) minmax(0, 1fr);
+}
+
+.pm-project-visual {
+  min-width: 0;
+}
+
+.pm-project-thumb {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 1rem;
+  aspect-ratio: 16 / 9;
+  border: 1px solid rgba(8, 47, 67, 0.12);
+  background: rgba(255, 255, 255, 0.82);
+}
+
+.pm-project-thumb img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: #fff;
+}
+
+.pm-project-thumb-fallback {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  color: var(--pm-ink);
+  font-size: 1rem;
+  font-weight: 800;
+  text-align: center;
 }
 
 .pm-project-mark {

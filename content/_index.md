@@ -84,51 +84,7 @@ sections:
       title: ""
       subtitle: ''
       text: |-
-        <div class="pm-home-section">
-          <div class="pm-section-label pm-section-label-sky">Open-Source Projects</div>
-          <div class="pm-board pm-board-sky">
-            <div class="pm-project-grid">
-              <article class="pm-project-card">
-                <div class="pm-project-mark pm-project-mark-jupyter">PGM</div>
-                <div class="pm-project-main">
-                  <h3><a href="https://github.com/MpLebron/PyGeoModel">PyGeoModel</a></h3>
-                  <p>An intelligent Python package for urban and geographic modeling within Jupyter environments, integrating model recommendation, interactive configuration, question answering, and service-based execution.</p>
-                  <div class="pm-chip-row">
-                    <a class="pm-chip" href="https://github.com/MpLebron/PyGeoModel">Code</a>
-                    <a class="pm-chip" href="https://pypi.org/project/PyGeoModel/">PyPI</a>
-                    <span class="pm-chip pm-chip-static">Jupyter</span>
-                    <span class="pm-chip pm-chip-static">GeoModeling</span>
-                  </div>
-                </div>
-              </article>
-              <article class="pm-project-card">
-                <div class="pm-project-mark pm-project-mark-mcp">MCP</div>
-                <div class="pm-project-main">
-                  <h3><a href="https://github.com/MpLebron/GeoDataProcessor-MCP">GeoDataProcessor-MCP</a></h3>
-                  <p>An MCP server for geospatial data processing tools, exposing WhiteBox and SAGA GIS style capabilities through a standardized interface for language-model-based agents and desktop assistants.</p>
-                  <div class="pm-chip-row">
-                    <a class="pm-chip" href="https://github.com/MpLebron/GeoDataProcessor-MCP">Code</a>
-                    <span class="pm-chip pm-chip-static">MCP server</span>
-                    <span class="pm-chip pm-chip-static">GIS tools</span>
-                  </div>
-                </div>
-              </article>
-              <article class="pm-project-card">
-                <div class="pm-project-mark pm-project-mark-sam">SAM</div>
-                <div class="pm-project-main">
-                  <h3><a href="https://github.com/MpLebron/RS_Segmentation">RS_Segmentation</a></h3>
-                  <p>An intelligent segmentation system for remote sensing and GIS imagery, supporting text-prompt segmentation, point-based refinement, GeoTIFF overlay browsing, Shapefile export, and optional voice interaction.</p>
-                  <div class="pm-chip-row">
-                    <a class="pm-chip" href="https://github.com/MpLebron/RS_Segmentation">Code</a>
-                    <a class="pm-chip" href="https://sam-agent.gagogroup.cn">Demo</a>
-                    <span class="pm-chip pm-chip-static">Geospatial AI</span>
-                    <span class="pm-chip pm-chip-static">SAM/SAM3</span>
-                  </div>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
+        {{< pm_projects >}}
     design:
       columns: '1'
       spacing:
