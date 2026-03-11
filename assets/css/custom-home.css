@@ -626,7 +626,7 @@
   margin: 0 !important;
   padding: 0 !important;
   border: 0;
-  object-fit: cover;
+  object-fit: contain;
   object-position: center;
 }
 
