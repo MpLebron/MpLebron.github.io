@@ -14,7 +14,7 @@ main:
     url: /#talks
     weight: 12
   - name: CV
-    url: experience/
+    url: /uploads/resume.pdf
     weight: 20
   - name: Projects
     url: /#projects
