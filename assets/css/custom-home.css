@@ -227,6 +227,25 @@ body div {
   max-width: none;
 }
 
+.hbb-section[id="visitors"] {
+  padding-top: 0;
+}
+
+.hbb-section[id="visitors"] > div,
+.hbb-section[id="visitors"] > div > .prose {
+  width: min(1120px, calc(100vw - 4rem));
+  max-width: none;
+}
+
+.pm-visitor-map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0.5rem 0 0;
+}
+
 .pm-home-section {
   width: 100%;
   max-width: 1080px;

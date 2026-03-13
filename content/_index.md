@@ -89,4 +89,17 @@ sections:
       columns: '1'
       spacing:
         padding: [0, 0, 0, 0]
+  - block: markdown
+    id: visitors
+    content:
+      title: ""
+      subtitle: ''
+      text: |-
+        <div class="pm-visitor-map">
+          <script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=CJJlrcCtP0bNmR8RCgvJKN1oUyVtgCvoZYof7CcjgB0&amp;cl=ffffff&amp;w=a"></script>
+        </div>
+    design:
+      columns: '1'
+      spacing:
+        padding: [0, 0, 2rem, 0]
 ---
